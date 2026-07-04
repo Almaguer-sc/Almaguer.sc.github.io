@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="titulo-pagina">Producto — Almaguer Specialty Coffee</title>
+<meta name="description" content="Ficha técnica de café de especialidad Almaguer: origen, proceso, puntaje SCA y trazabilidad completa.">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+  .gallery-main {
+    aspect-ratio: 4/3;
+    background: var(--color-arena);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: var(--space-2);
+  }
+  .gallery-main img { width:100%; height:100%; object-fit:cover; }
+  .gallery-thumbs { display:flex; gap: var(--space-2); }
+  .gallery-thumbs button {
+    width: 76px; height: 76px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--color-borde);
+    padding: 0;
+    background: var(--color-arena);
+    cursor: pointer;
+  }
+  .gallery-thumbs button.activo { border-color: var(--color-borgona); }
+  .gallery-thumbs img { width:100%; height:100%; object-fit:cover; }
+
+  .ficha-tecnica { display:flex; gap:12px; flex-wrap:wrap; margin: var(--space-3) 0; }
+  .ficha-tecnica .dato {
+    flex: 1; min-width: 130px;
+    border: 1px dashed var(--color-borde);
+    border-radius: var(--radius-sm);
+    padding: var(--space-2);
+    text-align:center;
+  }
+  .ficha-tecnica .dato .label { font-size: var(--text-xs); color: var(--color-tierra); }
+  .ficha-tecnica .dato .valor { font-size: var(--text-sm); font-weight:500; margin-top:4px; }
+
+  .trazabilidad-linea {
+    display:flex; justify-content:space-between; position:relative; margin: var(--space-3) 0;
+  }
+  .trazabilidad-linea::before {
+    content:""; position:absolute; top:8px; left:0; right:0; height:1px; background: var(--color-borde);
+  }
+  .trazabilidad-linea .paso { text-align:center; font-size: var(--text-xs); color: var(--color-tierra); position:relative; flex:1; }
+  .trazabilidad-linea .paso::before {
+    content:""; display:block; width:16px; height:16px; border-radius:50%;
+    background: var(--color-borgona); margin: 0 auto 8px; position:relative; z-index:1;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Almaguer</a>
+    <nav aria-label="Principal">
+      <ul class="nav-links">
+        <li><a href="productos.html" aria-current="page">Catálogo</a></li>
+        <li><a href="origen.html">Origen</a></li>
+        <li><a href="como-compramos.html">Cómo compramos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="carrito.html" aria-label="Ver carrito">Carrito</a>
+  </div>
+</header>
+
+<main id="contenido-producto">
+  <section class="section">
+    <div class="container">
+      <p style="color: var(--color-tierra);">Cargando café…</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="logo">Almaguer</span>
+    <ul class="footer-links">
+      <li><a href="productos.html">Catálogo</a></li>
+      <li><a href="origen.html">Origen</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> ·
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products-data.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
