@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cómo Compramos — Almaguer Specialty Coffee</title>
+<meta name="description" content="Trazabilidad completa: cómo compramos, procesamos y tostamos cada lote de café Almaguer.">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+  .paso-compra {
+    display:flex; gap: var(--space-2);
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--color-borde);
+  }
+  .paso-compra .numero {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    color: var(--color-oro);
+    min-width: 40px;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Almaguer</a>
+    <nav aria-label="Principal">
+      <ul class="nav-links">
+        <li><a href="productos.html">Catálogo</a></li>
+        <li><a href="origen.html">Origen</a></li>
+        <li><a href="como-compramos.html" aria-current="page">Cómo compramos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="carrito.html" aria-label="Ver carrito" id="enlace-carrito">Carrito</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="section-tight">
+    <div class="container" style="max-width: 760px;">
+      <h1>Cómo compramos</h1>
+      <p style="color: var(--color-tierra);">Trazabilidad completa no es una frase de marketing — es el proceso real detrás de cada lote.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container" style="max-width: 760px;">
+      <img src="assets/images/secado-camas-sombra.jpg" alt="Café secando en camas africanas bajo sombra" style="border-radius: var(--radius-md); width:100%; aspect-ratio: 16/7; object-fit:cover;">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 760px;">
+
+      <div class="paso-compra">
+        <div class="numero">01</div>
+        <div>
+          <h3>Elegimos el lote, no al revés</h3>
+          <p>Cada café que llevamos a México lo elegimos en Colombia mirando su puntaje SCA, su variedad y su proceso. Buscamos lotes que ya se destacan por su sabor — no los más baratos del mercado.</p>
+        </div>
+      </div>
+
+      <div class="paso-compra">
+        <div class="numero">02</div>
+        <div>
+          <h3>Tueste con maestros aliados</h3>
+          <p>Trabajamos con tostadores profesionales en Bogotá y en Tijuana, y elegimos en cada lote con quién tostar según el perfil que buscamos. Así controlamos la calidad de cada tanda sin depender de un solo proveedor.</p>
+        </div>
+      </div>
+
+      <div class="paso-compra">
+        <div class="numero">03</div>
+        <div>
+          <h3>Empacado para proteger el sabor</h3>
+          <p>Cada bolsa lleva una barrera hermética contra oxígeno, humedad y luz, para que el café te llegue con la misma frescura del día que se tostó.</p>
+        </div>
+      </div>
+
+      <div class="paso-compra">
+        <div class="numero">04</div>
+        <div>
+          <h3>De Colombia a tu puerta, en su mejor momento</h3>
+          <p>Tostamos antes de enviar, así el café no pasa meses esperando en una bodega ni pierde su punto óptimo en el camino. Llega listo para tomarse.</p>
+        </div>
+      </div>
+
+      <div class="paso-compra" style="border-bottom:none;">
+        <div class="numero">05</div>
+        <div>
+          <h3>A tu taza, con toda su historia</h3>
+          <p>Cada bolsa llega con su ficha completa: finca, altitud, variedad, proceso y puntaje SCA — para que sepas exactamente qué estás tomando y por qué vale lo que cuesta.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-tight" style="background: var(--color-arena); text-align:center;">
+    <div class="container">
+      <h3>¿Tienes dudas sobre algún lote específico?</h3>
+      <a href="contacto.html" class="btn btn-primary" style="margin-top: var(--space-2);">Escríbenos</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="logo">Almaguer</span>
+    <ul class="footer-links">
+      <li><a href="productos.html">Catálogo</a></li>
+      <li><a href="origen.html">Origen</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div>
+      <a href="https://www.instagram.com/almaguer.sc/" target="_blank" rel="noopener">Instagram</a> ·
+      <a href="https://www.facebook.com/profile.php?id=61591626172320&locale=es_LA" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/cart.js"></script>
+</body>
+</html>
