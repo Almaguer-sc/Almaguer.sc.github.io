@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* Color — paleta aprobada */
+  --color-borgona: #3F1816;
+  --color-borgona-hover: #5A2620;
+  --color-borgona-activo: #2A100D;
+  --color-hueso: #F7F3EC;
+  --color-tierra: #6B5B4F;
+  --color-oro: #C9A66B;
+  --color-arena: #E8E2D4;
+  --color-casi-negro: #1F1512;
+  --color-borde: #D8D0C2;
+  --color-texto-secundario: #8A8378;
+
+  /* Tipografía */
+  --font-display: 'GFS Didot', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', Arial, sans-serif;
+
+  /* Escala tipográfica */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.5rem;
+  --text-3xl: 3.5rem;
+
+  /* Espaciado — múltiplos de 8px */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
+
+  /* Layout */
+  --container-max: 1200px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+}
