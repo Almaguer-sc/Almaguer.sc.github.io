@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Almaguer Specialty Coffee</title>
+<meta name="description" content="Contacta a Almaguer Specialty Coffee para compras, dudas o alianzas de mayoreo.">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+  .contacto-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-2);
+  }
+  .contacto-card .icono {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--color-arena);
+    display: flex; align-items: center; justify-content: center;
+    font-size: var(--text-sm);
+    flex-shrink: 0;
+  }
+  .contacto-card .detalle .label { font-size: var(--text-xs); color: var(--color-tierra); }
+  .contacto-card .detalle .valor { font-size: var(--text-base); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Almaguer</a>
+    <nav aria-label="Principal">
+      <ul class="nav-links">
+        <li><a href="productos.html">Catálogo</a></li>
+        <li><a href="origen.html">Origen</a></li>
+        <li><a href="como-compramos.html">Cómo compramos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="carrito.html" aria-label="Ver carrito" id="enlace-carrito">Carrito</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="section-tight">
+    <div class="container">
+      <h1>Contacto</h1>
+      <p style="color: var(--color-tierra);">¿Dudas sobre un lote, tu pedido, o buscas café para tu cafetería o negocio? Escríbenos.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 560px;">
+
+      <a class="contacto-card" href="https://wa.me/526647110882" target="_blank" rel="noopener">
+        <div class="icono">W</div>
+        <div class="detalle">
+          <div class="label">WhatsApp</div>
+          <div class="valor">+52 664 711 0882</div>
+        </div>
+      </a>
+
+      <a class="contacto-card" href="mailto:almaguer.specialty.coffee@gmail.com">
+        <div class="icono">@</div>
+        <div class="detalle">
+          <div class="label">Correo</div>
+          <div class="valor">almaguer.specialty.coffee@gmail.com</div>
+        </div>
+      </a>
+
+      <a class="contacto-card" href="https://www.instagram.com/almaguer.sc/" target="_blank" rel="noopener">
+        <div class="icono">IG</div>
+        <div class="detalle">
+          <div class="label">Instagram</div>
+          <div class="valor">@almaguer.sc</div>
+        </div>
+      </a>
+
+      <a class="contacto-card" href="https://www.facebook.com/profile.php?id=61591626172320&locale=es_LA" target="_blank" rel="noopener">
+        <div class="icono">FB</div>
+        <div class="detalle">
+          <div class="label">Facebook</div>
+          <div class="valor">Almaguer Specialty Coffee</div>
+        </div>
+      </a>
+
+      <div class="contacto-card" style="border-style:dashed;">
+        <div class="icono">📍</div>
+        <div class="detalle">
+          <div class="label">Ubicación</div>
+          <div class="valor">Tijuana, B.C., México</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-tight" style="background: var(--color-arena); text-align:center;">
+    <div class="container">
+      <h3>¿Buscas para tu cafetería o negocio?</h3>
+      <p style="margin-inline:auto;">Escríbenos por WhatsApp o correo mencionando "mayoreo" y te compartimos precios por volumen.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="logo">Almaguer</span>
+    <ul class="footer-links">
+      <li><a href="productos.html">Catálogo</a></li>
+      <li><a href="origen.html">Origen</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div>
+      <a href="https://www.instagram.com/almaguer.sc/" target="_blank" rel="noopener">Instagram</a> ·
+      <a href="https://www.facebook.com/profile.php?id=61591626172320&locale=es_LA" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/cart.js"></script>
+</body>
+</html>

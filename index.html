@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Almaguer — Café de especialidad de Colombia</title>
+<meta name="description" content="Almaguer Specialty Coffee. Trazabilidad completa, puntaje SCA y procesos diferenciados, desde el origen de Colombia hasta tu taza.">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Almaguer</a>
+    <nav aria-label="Principal">
+      <ul class="nav-links">
+        <li><a href="productos.html" aria-current="page">Catálogo</a></li>
+        <li><a href="origen.html">Origen</a></li>
+        <li><a href="como-compramos.html">Cómo compramos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="carrito.html" aria-label="Ver carrito" id="enlace-carrito">Carrito</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <!-- FOTO PENDIENTE: reemplazar con imagen final curada (cosecha o tueste, tonos cálidos) -->
+    <img src="assets/images/hero-placeholder.jpg" alt="Cosecha de café en Huila, Colombia" onerror="this.style.background='var(--color-arena)'">
+    <div class="hero-content container">
+      <h1>Colombia sabe así</h1>
+      <p>Trazabilidad completa. Puntaje SCA. Origen verificado, de la finca a tu taza.</p>
+      <a href="productos.html" class="btn btn-primary">Ver catálogo</a>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container grid-12">
+      <div style="grid-column: span 4;">
+        <h3>Trazabilidad</h3>
+        <p style="color: var(--color-tierra); font-size: var(--text-sm);">Cada lote documentado desde la finca hasta el empaque.</p>
+      </div>
+      <div style="grid-column: span 4;">
+        <h3>Puntaje SCA</h3>
+        <p style="color: var(--color-tierra); font-size: var(--text-sm);">Café evaluado bajo estándares internacionales de calidad.</p>
+      </div>
+      <div style="grid-column: span 4;">
+        <h3>Proceso</h3>
+        <p style="color: var(--color-tierra); font-size: var(--text-sm);">Honey, Natural, Anaeróbico y Lavado — cada uno con su propio carácter.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="margin-bottom: var(--space-3);">Lotes destacados</h2>
+      <div class="grid-12">
+
+        <a href="producto.html?lote=bourbon-rosado-honey" class="card-product" style="grid-column: span 6; text-decoration:none;">
+          <div class="card-product-image">
+            <!-- FOTO PENDIENTE -->
+            <img src="assets/images/bourbon-rosado-honey.jpg" alt="Bourbon Rosado Honey">
+          </div>
+          <div class="card-product-body">
+            <span class="badge badge-honey">honey</span>
+            <div class="card-product-name">Bourbon Rosado Honey</div>
+            <div class="card-product-sca">86.5 SCA — Acevedo, Huila</div>
+            <div class="card-product-price">$283 MXN / 250g</div>
+          </div>
+        </a>
+
+        <a href="producto.html?lote=catuai-lavado" class="card-product" style="grid-column: span 6; text-decoration:none;">
+          <div class="card-product-image">
+            <!-- FOTO PENDIENTE -->
+            <img src="assets/images/catuai-lavado.jpg" alt="Catuaí Lavado">
+          </div>
+          <div class="card-product-body">
+            <span class="badge badge-lavado">lavado</span>
+            <div class="card-product-name">Catuaí Lavado</div>
+            <div class="card-product-sca">86 SCA — Acevedo, Huila</div>
+            <div class="card-product-price">$261 MXN / 250g</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--color-arena);">
+    <div class="container grid-12" style="align-items: center;">
+      <div style="grid-column: span 6;">
+        <!-- FOTO PENDIENTE: paisaje del Macizo Colombiano / confluencia de ríos -->
+        <img src="assets/images/nudo-de-almaguer.jpg" alt="Nudo de Almaguer" style="border-radius: var(--radius-md);">
+      </div>
+      <div style="grid-column: span 6;">
+        <h2>El Nudo de Almaguer</h2>
+        <p>En el sur de Colombia nace el agua que alimenta los cafetales de todo el país: cuatro ríos —Magdalena, Cauca, Patía y Caquetá— comparten un mismo origen. Desde ahí partimos para contar el café de toda Colombia, no solo el de una región.</p>
+        <a href="origen.html" class="btn btn-link">Conocer el origen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" style="text-align:center;">
+    <div class="container">
+      <h2>Encuentra tu lote</h2>
+      <p style="margin-inline:auto;">Café de trazabilidad completa, listo para tu mesa o tu negocio.</p>
+      <div style="margin-top: var(--space-3); display:flex; gap:16px; justify-content:center;">
+        <a href="productos.html" class="btn btn-primary">Comprar</a>
+        <a href="contacto.html" class="btn btn-secondary">Mayoreo</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="logo">Almaguer</span>
+    <ul class="footer-links">
+      <li><a href="productos.html">Catálogo</a></li>
+      <li><a href="origen.html">Origen</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div>
+      <a href="https://www.instagram.com/almaguer.sc/" target="_blank" rel="noopener">Instagram</a> ·
+      <a href="https://www.facebook.com/profile.php?id=61591626172320&locale=es_LA" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/cart.js"></script>
+</body>
+</html>
