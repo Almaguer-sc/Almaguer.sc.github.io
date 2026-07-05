@@ -1,0 +1,171 @@
+/* Botones */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 26px;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--color-borgona);
+  color: var(--color-hueso);
+}
+.btn-primary:hover { background: var(--color-borgona-hover); }
+.btn-primary:active { background: var(--color-borgona-activo); }
+.btn-primary:disabled {
+  background: var(--color-borde);
+  color: var(--color-texto-secundario);
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-borgona);
+  border-color: var(--color-borgona);
+}
+.btn-secondary:hover { background: rgba(63,24,22,0.06); }
+
+.btn-link {
+  background: none;
+  color: var(--color-tierra);
+  border-bottom: 1px solid var(--color-tierra);
+  border-radius: 0;
+  padding: 0;
+}
+
+/* Badges de proceso — escala monocromática, escalable a nuevos procesos */
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: var(--text-xs);
+  border-radius: 3px;
+  color: var(--color-hueso);
+}
+.badge-honey { background: var(--color-oro); color: var(--color-borgona); }
+.badge-lavado { background: var(--color-tierra); }
+.badge-natural { background: var(--color-borgona); }
+.badge-anaerobico { background: var(--color-casi-negro); }
+
+/* Card de catálogo */
+.card-product {
+  border: 0.5px solid var(--color-borde);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-hueso);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.card-product:hover {
+  box-shadow: 0 8px 24px rgba(31,21,18,0.08);
+  transform: translateY(-2px);
+}
+.card-product-image {
+  aspect-ratio: 4 / 3;
+  background: var(--color-arena);
+  overflow: hidden;
+}
+.card-product-image img { width: 100%; height: 100%; object-fit: cover; }
+.card-product-body { padding: var(--space-2); }
+.card-product-name {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  margin: var(--space-1) 0 2px;
+}
+.card-product-sca {
+  font-size: var(--text-xs);
+  color: var(--color-tierra);
+  margin-bottom: var(--space-1);
+}
+.card-product-price {
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+/* Inputs y formularios */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: var(--space-2);
+}
+.field label {
+  font-size: var(--text-xs);
+  color: var(--color-tierra);
+}
+.field input,
+.field textarea,
+.field select {
+  padding: 10px 14px;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  color: var(--color-borgona);
+}
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  border-color: var(--color-borgona);
+}
+
+/* Selector de presentación */
+.size-selector {
+  display: flex;
+  gap: 8px;
+}
+.size-option {
+  padding: 8px 16px;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  color: var(--color-tierra);
+  cursor: pointer;
+  background: none;
+}
+.size-option[aria-pressed="true"] {
+  border-color: var(--color-borgona);
+  color: var(--color-borgona);
+  font-weight: 500;
+}
+
+/* Fila de producto — carrito */
+.cart-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  border: 0.5px solid var(--color-borde);
+  border-radius: var(--radius-md);
+  padding: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+.cart-row-thumb {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-sm);
+  background: var(--color-arena);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.cart-row-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.cart-row-info { flex: 1; }
+.cart-row-info .name { font-family: var(--font-display); font-size: var(--text-lg); }
+.cart-row-info .size { font-size: var(--text-xs); color: var(--color-tierra); }
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+}
+.qty-control button {
+  background: none;
+  border: none;
+  font-size: var(--text-base);
+  cursor: pointer;
+  color: var(--color-borgona);
+}
